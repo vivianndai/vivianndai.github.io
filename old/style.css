@@ -1,0 +1,283 @@
+/* EB Garamond */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/* Alegreya Sans SC, all caps */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400&display=swap');
+/* Halant, serif*/
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400&display=swap');
+/* Raleway, sans serif */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+
+#colors {
+  color: #FBFBFB;
+  color: #70A288;
+  color: #2D2E2E;
+  color: #0F0F0F;
+  color: #F6AE2D;
+}
+
+/* -------------------------------- Doc -------------------------------- */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #FBFBFB;
+  scroll-behavior: smooth;
+  height: 100%;
+  cursor: default;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  transition-duration: 0.3s;
+}
+
+img:hover {
+  box-shadow: 0 5px 20px rgba(0,0,0,.3);
+  transform: translateY(-5px) scale(1.02);
+  transition-duration: 0.3s;
+} 
+
+/* -------------------------------- Text -------------------------------- */
+h1 {
+  color: #F6AE2D;
+  font-family: 'EB Garamond', serif;
+  font-size: 50px;
+  margin: 0px;
+  text-shadow: -2px 2px 0px rgba(0,0,0,0.2);
+  transition-duration: 0.2s;
+
+}
+
+h1:hover {
+  text-shadow: -2px 2px 0px #D9D0DE,
+                 -4px 4px 0px #b5adb9,
+                 -6px 6px 0px #9d93a1;
+  transition-duration: 0.2s;
+}
+
+h2 {
+  color: #2D2E2E;
+  font-family: 'Halant', serif;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0px;
+
+}
+
+h3 {
+  color: #2D2E2E;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  margin: 0px;
+}
+
+h4 {
+  color: #2D2E2E;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  margin: 0px;
+  margin-top: 20px;
+
+  transform-origin: left;
+  transition-duration: 0.2s;
+}
+
+h4:hover {
+  transform: scale(1.05);
+  transform-origin: left;
+  transition-duration: 0.2s;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  margin: 20px;
+  color: #2D2E2E;
+}
+
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  margin: 20px;
+  color: #2D2E2E;
+}
+
+
+/* -------------------------------- Header -------------------------------- */
+#name-icon {
+  width: 150px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+#intro-photo {
+  float: left;
+  width: 400px;
+  margin-right: 80px;
+  margin-top: 100px;
+}
+
+.intro-text {
+  float: right;
+  text-align: right;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+
+/* -------------------------------- Links -------------------------------- */
+.link {
+  margin-left: 80px;
+  padding: 4px;
+}
+
+.link-text {
+  font-size: 20px;
+  color: #2D2E2E;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+  margin: 10px;
+}
+
+.link-text:hover {
+  color: #F6AE2D;
+  font-weight: 300;
+}
+
+
+/* -------------------------------- School -------------------------------- */
+.section {
+  margin: 70px;
+  margin-top: 150px;
+}
+
+#gpa {
+  margin-bottom: 30px;
+  transform-origin: left;
+  transition-duration: 0.2s;
+}
+  
+#gpa:hover {
+  transform: scale(1.05);
+  transform-origin: left;
+  transition-duration: 0.2s;
+}
+
+#cuarts {
+  width: 750px;
+  margin-top: 50px;
+  margin-left: 50px;
+  opacity: 0.9;
+  cursor: url(images/gbr.png) 50 20, auto;
+}
+
+#cuarts:hover {
+  opacity: 1;
+}
+
+#coursework {
+  float: left;
+  transition-duration: 0.3s;
+  margin-top: 100px;
+}
+
+
+/* -------------------------------- Tooltip -------------------------------- */
+.tooltip {
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #70A288;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  transition-duration: 0.2s;
+ 
+  position: absolute;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition-duration: 0.2s;
+}
+
+
+/* -------------------------------- Skills -------------------------------- */
+.row {
+  margin-left: 100px;
+}
+
+.column {
+  float: left;
+  width: 27%;
+  margin: 30px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* -------------------------------- Work -------------------------------- */
+.work-title {
+  margin-top: 70px;
+}
+
+.work-text {
+  float: left;
+}
+
+.work-pic {
+  width: 850px;
+  float: left;
+  margin-left: 120px;
+  margin-top: 60px;
+  opacity: 0.9;
+}
+
+.work-pic:hover {
+  opacity: 1;
+}
+
+#cev {
+  cursor: url(images/cevcursor.png), auto;
+}
+
+
+/* -------------------------------- Music -------------------------------- */
+iframe {
+  height: 300px;
+  width: 800px;
+}
+
+#spotify {
+margin-left: 200px;
+margin-top: 50px;
+}
