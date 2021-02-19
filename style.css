@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
 /* Khula, sans serif */
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300&display=swap');
+/* Khula, sans serif */
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@600&display=swap');
+
 
 #colors {
   color: #FBFBFB;
@@ -22,6 +25,7 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   cursor: default;
+  background-image: url("images/waterfall.png");
 }
 
 .container {
@@ -36,6 +40,57 @@ a {
   text-decoration: none;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #2D2E2E;
+  font-family: 'Khula', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  text-decoration-line: overline;
+}
+
+#name {
+  padding-top: 15%
+}
+
+/* Add a black background color to the top navigation */
+.links {
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Style the links inside the navigation bar */
+.links a {
+  display: block;
+  margin: auto;
+  color: #2D2E2E;
+  font-family: 'Khula', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  text-decoration-line: overline;
+}
+
 /* -------------------------------- Text -------------------------------- */
 
 h1 {
@@ -43,7 +98,6 @@ h1 {
   font-family: 'Tinos', serif;
   font-size: 40px;
   font-weight: 600;
-  padding-top: 15%;
   text-align: center;
 }
 

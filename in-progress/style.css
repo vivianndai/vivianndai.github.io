@@ -1,0 +1,56 @@
+/* Tinos, serif */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+/* Khula, sans serif */
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300&display=swap');
+
+#colors {
+  color: #FBFBFB;
+  color: #70A288;
+  color: #2D2E2E;
+  color: #0F0F0F;
+  color: #F6AE2D;
+}
+
+/* -------------------------------- Doc -------------------------------- */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #FBFBFB;
+  scroll-behavior: smooth;
+  height: 100%;
+  cursor: default;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------- Text -------------------------------- */
+
+h1 {
+  color: #2D2E2E;
+  font-family: 'Tinos', serif;
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 15%;
+  text-align: center;
+}
+
+h5 {
+  color: #2D2E2E;
+  font-family: 'Khula', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+}
