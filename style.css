@@ -14,7 +14,6 @@
   color: #F6AE2D;
 }
 
-/* -------------------------------- Doc -------------------------------- */
 html {
   margin: 0;
   padding: 0;
@@ -40,12 +39,10 @@ a {
   text-decoration: none;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   color: #2D2E2E;
@@ -57,7 +54,6 @@ a {
   text-decoration: none;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   color: black;
   text-decoration-line: overline;
@@ -67,13 +63,11 @@ a {
   padding-top: 15%
 }
 
-/* Add a black background color to the top navigation */
 .links {
   overflow: hidden;
   margin: auto;
 }
 
-/* Style the links inside the navigation bar */
 .links a {
   display: block;
   margin: auto;
@@ -85,7 +79,6 @@ a {
   text-decoration: none;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   color: black;
   text-decoration-line: overline;
