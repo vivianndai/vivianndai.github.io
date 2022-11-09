@@ -1,0 +1,41 @@
+/* Glitten, serif */
+@import url('https://www.dafont.com/glitten.font');
+
+
+#colors {
+  color: #F7E1D7;
+  color: #A3C4BC;
+  color: #DEDBD2;
+  color: #E7EFC5;
+  color: #BFD7B5;
+  color: #413C58;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #FBFBFB;
+  scroll-behavior: smooth;
+  height: 100%;
+  cursor: default;
+  background-image: url("images/waterfall.png");
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------- Text -------------------------------- */
+
+h1 {
+  font-family: 'Glitten', serif;
+}
+
+body {
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
