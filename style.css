@@ -1,5 +1,13 @@
 /* Glitten, serif */
-@import url('https://www.dafont.com/glitten.font');
+@font-face {
+  font-family: "Glitten-Regular";
+  src: url('assets/Glitten-Regular.otf');
+}
+
+@font-face {
+  font-family: "Glitten-Caps";
+  src: url('assets/GLITTEN\ ALL\ CAPS.ttf');
+}
 
 
 #colors {
@@ -31,11 +39,33 @@ a {
 /* -------------------------------- Text -------------------------------- */
 
 h1 {
-  font-family: 'Glitten', serif;
+  font-family: 'Glitten-Regular';
+  font-size: 24pt;
+  color: #413C58;
+}
+
+h2 {
+  font-family: 'Glitten-Regular';
+  font-size: 24pt;
+  color: #413C58;
 }
 
 body {
-    font-family: brandon-grotesque, sans-serif;
-    font-style: normal;
-    font-weight: 400;
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #413C58;
+}
+
+#intro {
+  height: 700px;
+  background-color: #BFD7B5;
+}
+
+.section {
+  height: 1126px;
+}
+
+#about {
+  background-color: #F7E1D7;
 }
