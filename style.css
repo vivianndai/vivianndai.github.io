@@ -79,6 +79,24 @@ h4 {
   margin: 1px;
 }
 
+h5 {
+  font-family: 'Glitten-Regular';
+  font-size: 20pt;
+  font-weight: 200;
+  color: rgb(35, 35, 35);
+  margin-top: 5%;
+  margin-bottom: 3px;
+}
+
+h6 {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13pt;
+  color: rgb(35, 35, 35);
+  margin: 1px;
+}
+
 p {
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
@@ -90,7 +108,7 @@ p {
 
 body {
   display: grid;
-  grid-template-rows: 600px 900px 900px 900px 900px 900px;
+  grid-template-rows: 600px 900px 900px 900px 900px;
   /* grid-template-rows: repeat(6, 1fr); */
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0px;
@@ -154,7 +172,10 @@ header {
 }
 
 #experience {
+  /* background: url("assets/mountains.png"), #A3C4BC; */
+  /* background-repeat: no-repeat; */
   background-color: #A3C4BC;
+  background-size: cover;
   grid-area: 3 / 1 / 4 / 6;
   justify-content: center;
   text-align: center;
@@ -174,7 +195,7 @@ header {
 
 .job-info {
   /* position: absolute; */
-  width: 20%;
+  width: 13%;
 }
 
 .job-description {
@@ -202,47 +223,57 @@ header {
 
 .div2 {
   grid-area: 1 / 4 / 2 / 5;
-  padding: 10%;
+  padding-left: 10%;
 }
 
 .div3 {
   grid-area: 2 / 1 / 3 / 2;
+  padding-left: 10%;
 }
 
 .div4 {
   grid-area: 2 / 2 / 3 / 3;
+  padding-left: 10%;
 }
 
 .div5 {
   grid-area: 2 / 3 / 3 / 4;
+  padding-left: 10%;
 }
 
 .div6 {
   grid-area: 3 / 1 / 4 / 2;
+  padding-left: 10%;
 }
 
 .div7 {
   grid-area: 3 / 2 / 4 / 3;
+  padding-left: 10%;
 }
 
 .div8 {
   grid-area: 3 / 3 / 4 / 4;
+  padding-left: 10%;
 }
 
 .div9 {
   grid-area: 4 / 1 / 5 / 2;
+  padding-left: 10%;
 }
 
 .div10 {
   grid-area: 4 / 2 / 5 / 3;
+  padding-left: 10%;
 }
 
 .div11 {
   grid-area: 4 / 3 / 5 / 4;
+  padding-left: 10%;
 }
 
 .div12 {
   grid-area: 2 / 4 / 5 / 5;
+  padding-left: 10%;
 }
 
 /* #learning-left {
@@ -275,49 +306,118 @@ header {
   /* position: absolute; */
 }
 
-#class-description {}
-
-
-#projects {
+.projects {
   grid-area: 5 / 1 / 6 / 6;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  background-color: #413C58;
 }
 
 .proj-title {
   grid-area: 1 / 1 / 3 / 2;
+  padding-left: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-title>h1 {
+  color: #FBFBFB;
 }
 
 .proj1 {
   grid-area: 1 / 2 / 2 / 4;
+  margin-top: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj1>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin: 0;
+}
+
+.proj1>a>img {
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 25px;
+  /* margin-top: 10%; */
 }
 
 .proj2 {
   grid-area: 1 / 4 / 2 / 6;
+  margin-top: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj2>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj2>a>img {
+  max-width: 70%;
+  border-radius: 25px;
 }
 
 .proj3 {
   grid-area: 2 / 2 / 3 / 4;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj3>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj3>a>img {
+  max-width: 70%;
+  border-radius: 25px;
 }
 
 .proj4 {
   grid-area: 2 / 4 / 3 / 6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-#projects-title {
-  grid-area: 5 / 1 / 6 / 2;
+.proj4>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#projects-left {
-  grid-area: 5 / 2 / 6 / 4;
+.proj4>a>img {
+  max-width: 70%;
+  border-radius: 25px;
 }
 
-#projects-right {
-  grid-area: 5 / 4 / 6 / 6;
+.proj-text {
+  position: absolute;
+  text-align: right;
+  right: 20%;
+  /* top: 60%; */
 }
 
 .vl {
