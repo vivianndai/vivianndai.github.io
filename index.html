@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="https://use.typekit.net/pla6zyz.css">
+  <script src="scroll.js"></script>
   <meta name="description" content="Vivian Dai's Personal Site">
   <meta name="author" content="Vivian Dai">
   <link rel="icon"
@@ -18,17 +19,20 @@
 
 <body>
   <header>
-
+    <a name="top"></a>
     <h1 id="name">Vivian Dai</h1>
     <h2>CORNELL UNIVERSITY COMPUTER SCIENCE</h2>
     <h2>INCOMING SOFTWARE ENGINEER @ GOOGLE</h2>
     <h2>she/her</h2>
     <div id="contact-me">
       <a href="mailto:vzd2@cornell.edu">
-        <p>contact me</p>
+        <p><span class="contact-button">contact me</span></p>
+      </a>
+      <a href="https://www.linkedin.com/in/vivianndai/">
+        <p><span class="contact-button">linkedin</span></p>
       </a>
       <a href="assets/Vivian_Dai_Resume.pdf">
-        <p>resume</p>
+        <p><span class="contact-button">resume</span></p>
       </a>
     </div>
 
@@ -38,31 +42,39 @@
   </div>
 
   <!-- <img class="header-photo" src="assets/waterfall.png"> -->
+  <button id="scroll-button"><a href="#top"><img src="assets/up.png"></a></button>
 
   <section id="about">
     <div class="vl"></div>
     <h1>about me</h1>
     <br>
-    <h6>Hi! My name is Vivian Dai. I'm currently a senior at Cornell University,
-      where I study computer science. My interests lie in computational sustainability:
+    <h6>Hi! My name is Vivian Dai. I'm currently a <span class="highlight">senior at
+        Cornell
+        University</span>,
+      where I study <span class="highlight">computer science</span>. My interests lie in <span
+        class="highlight">computational
+        sustainability</span>:
       using software, mathematics, and data to make informed decisions
       about problems impacting the earth's future.
     </h6>
     <br>
-    <h6>After graduation, I will be starting as a software engineer on Google Cloud AI.
+    <h6>After graduation, I will be starting as a <span class="highlight">software engineer on Google Cloud AI </span>.
       I'll also be moving to Seattle. Although I've never been there before, I am
       excited to experience all of the hikes, nature, and rainy days! I grew up in Toronto (which is still my favourite
       city to this day).
     </h6>
     <br>
     <h6>
-      Apart from computer science, I'm also studying english (as a minor), and
-      horticulture (for fun). I love creative writing, especially memoir. While
+      Apart from computer science, I'm also studying <span class="highlight">english</span> (as a
+      minor), and
+      <span class="highlight">horticulture</span> (for fun). I love creative writing, especially memoir.
+      While
       I have not published any works, I love to talk about the writing of others.
       I hope that one day, I will write a story that I want to show the world.
     </h6>
     <br>
-    <h6>I'm an avid hiker as well. Some of the beautiful places that I have had
+    <h6>I'm an <span class="highlight">avid hiker</span> as well. Some of the beautiful places that I
+      have had
       the privilege to hike are Bryce Canyon, Yosemite, Pinnacles, Sequoia, Shenandoah, Huang Shan,
       Hua Shan, and Northern Ontario (and many more!). The next place on my bucket list is Zhangjiajie.
     </h6>
@@ -87,17 +99,17 @@
   <section id="experience">
     <h1>experience</h1>
     <br>
-    <!-- <div class="job">
+    <div class="job">
       <div class="job-info">
         <h3>Google</h3>
-        <h4>Software Engineer</h4>
+        <h4>Incoming Software Engineer</h4>
         <h4>Seattle, WA</h4>
         <h4>August 2023</h4>
       </div>
       <div class="job-description">
-        <h2>Google Cloud AI.</h2>
+        <h2>After my graduation, I will be working as a software engineer on Google Cloud AI.</h2>
       </div>
-    </div> -->
+    </div>
     <div class="job">
       <div class="job-info">
         <h3>Google</h3>
@@ -106,8 +118,10 @@
         <h4>May - Aug 2022</h4>
       </div>
       <div class="job-description">
-        <h2> I interned on the Cloud AI Retail Search ML infrastructure team. During
-          my internship, I investigated a new training data storage system and
+        <h2> I interned on the <span class="job-highlight">Cloud AI Retail Search ML infrastructure
+            team</span>. During
+          my internship, I investigated a <span class="job-highlight">new training data storage
+            system</span> and
           created data pipelines to demonstrate the improved modeling workflow.
           This project taught me how to be independent and become an expert on
           a technology that my team did not have experience with. I had to learn,
@@ -124,11 +138,14 @@
       </div>
       <div class="job-description">
         <h2> I completed a co-op at Meta during the fall semester of my third year.
-          On the Meta Business Suite team, I created multiple new ML features for
-          Instagram creator classification model. I learned all about how NLP models
+          On the <span class="job-highlight">Meta Business Suite team</span>, I created multiple new ML
+          features for
+          <span class="job-highlight">Instagram creator classification model</span>. I learned all about how
+          NLP models
           are implemented and used in industry. As an extension of my project,
           I implemented NLP techniques and algorithms (TF-IDF, MinHash) to
-          improve text feature embeddings coverage.</h2>
+          improve text feature embeddings coverage.
+        </h2>
       </div>
     </div>
 
@@ -141,8 +158,10 @@
       </div>
       <div class="job-description">
         <h2>My first internship was as a part of Google's STEP program. I developed
-          a full-stack application to display room and rate-plan metadata on
-          Google's Hotel Center dashboard site. This improved the onboarding and debugging
+          a <span class="job-highlight">full-stack application</span> to display room and rate-plan metadata
+          on
+          <span class="job-highlight"> Google's Hotel Center</span> dashboard site. This improved the
+          onboarding and debugging
           capabilities of hotel partners who previously could not see the data they sent.
           Not only did I learn C++ and full-stack development, but I also learned
           a lot about the software engineering industry.
@@ -164,55 +183,58 @@
       <img src="assets/sunflower.png">
     </div>
     <div class="div3">
-      <h3>CS 4780</h3>
-      <p>Machine Learning</p>
-      <p>A fantastic class where I learned the fundamentals of ML. A building block that unlocks the world of machine
-        learning in academia and industry.
+      <h3>Machine Learning</h3>
+      <p><span class="class-highlight">CS 4780</span></p>
+      <p>A fantastic class where I learned the fundamentals of ML, unlocking the world of
+        machine learning in academia and the industry.
       </p>
     </div>
     <div class="div4">
-      <h3>CS 4740</h3>
-      <p>Natural Language Processing</p>
-      <p>A fascinating area of study that I became interested in after my internship at Meta.</p>
+      <h3>Natural Language Processing</h3>
+      <p><span class="class-highlight">CS 4740</span></p>
+      <p>A fascinating area of study that I became interested in after my internship at Meta. Learned about state-of-the
+        art models and techniques.</p>
     </div>
     <div class="div5">
-      <h3>CS 4820</h3>
-      <p>Analysis of Algorithms</p>
-      <p>Proofs are fun. I TA'd this course during the Spring 2022 semester.</p>
+      <h3>Algorithms</h3>
+      <p><span class="class-highlight">CS 4820</span></p>
+      <p>Proofs are fun. Although it was difficult, getting through it was so rewarding. I TA'd this course during the
+        Spring 2022 semester.</p>
     </div>
     <div class="div6">
-      <h3>CS 3110</h3>
-      <p>Data Structures and Functional Programming</p>
+      <h3>Functional Programming</h3>
+      <p><span class="class-highlight">CS 3110</span></p>
       <p>My favourite CS class and my favourite programming language: OCaml. This class changed the way I
-        approach software engineering and made me a better programmer.</p>
-      <p>Currently TA'ing.</p>
+        approach software engineering and made me a better programmer. Currently a TA.</p>
     </div>
     <div class="div7">
-      <h3>CS 4670</h3>
-      <p>Computer Vision</p>
-      <p>A very well-taught class with incredibly interesting content. Directly applicable to my work on my project
+      <h3>Computer Vision</h3>
+      <p><span class="class-highlight">CS 4670</span></p>
+      <p>A very well-taught class with incredibly interesting content. Directly applicable to the autonomous vehicle
+        work on my project
         team, Cornell Electric Vehicles.</p>
     </div>
     <div class="div8">
-      <h3>ENGL 3830</h3>
-      <p>Narrative Writing</p>
-      <p>A life-changing class. Got me out of my comfort zone to finally share my writing with others.</p>
+      <h3>Narrative Writing</h3>
+      <p><span class="class-highlight">ENGL 3830</span></p>
+      <p>A life-changing class. Read amazing short stories written by fellow students. Got me out of my comfort zone to
+        finally share my writing with others.</p>
     </div>
     <div class="div9">
-      <h3>ENGL 3795</h3>
-      <p>Communicating Climate Change</p>
+      <h3>Communicating Climate Change</h3>
+      <p><span class="class-highlight">ENGL 3795</span></p>
       <p>As a lifelong advocate for the environment, this class made me rethink the way I
         communicate about difficult issues.
       </p>
     </div>
     <div class="div10">
-      <h3>PLHRT 1102</h3>
-      <p>Hands-on Horticulture</p>
+      <h3>Hands-on Horticulture</h3>
+      <p><span class="class-highlight">PLHRT 1102</span></p>
       <p>Learned the ins and outs of gardening. One of my favourite classes I've ever taken.</p>
     </div>
     <div class="div11">
-      <h3>CORNELL ELECTRIC VEHICLES</h3>
-      <p>Project Team</p>
+      <h3>Cornell Electric Vehicles</h3>
+      <p><span class="class-highlight">Project Team</span></p>
       <p>Worked on autonomy and computer vision. Now leading the software subteam.</p>
     </div>
   </section>
@@ -222,52 +244,53 @@
       <h1>projects</h1>
     </div>
     <div class="proj1">
-      <a href="https://github.com/vivianndai/glarksons-adventures" target="_blank">
-        <img src="assets/glarkson-blur.png">
-      </a>
-      <div class="proj-text">
-        <h5>glarkson's adventure</h5>
-        <p>CS 3110</p>
-        <p> A platform game where you explore a world </p>
-        <p>overrun by robots and camels. Developed in OCaml.</p>
-      </div>
+      <h5>glarkson's adventure</h5>
+      <p>CS 3110</p>
+      <p> A platform game where you explore a world </p>
+      <p>overrun by robots and camels. Developed in OCaml.</p>
+      <a href="assets/3110-project/index.html" target="_blank" class="proj-button">play</a>
+      <a href="https://github.com/vivianndai/glarksons-adventures" target="_blank" class="proj-button">code</a>
     </div>
     <div class="proj2">
+      <h5>perception</h5>
+      <p>Cornell Electric Vehicles</p>
+      <p>Documentation for a modular vehicle perception system.</p>
+      <p>Code implemented with PyTorch.</p>
       <a href="https://github.coecis.cornell.edu/Resistance-Racing/CEV-Wiki/tree/master/software/projects/vision#summary-and-outcomes-"
-        target="_blank">
-        <img src="assets/cev-blur.png">
-      </a>
-      <div class="proj-text">
-        <h5>perception</h5>
-        <p>Cornell Electric Vehicles</p>
-        <p>Documentation for a modular vehicle perception system.</p>
-        <p>Implemented with PyTorch.</p>
-      </div>
+        target="_blank" class="proj-button">wiki</a>
     </div>
     <div class="proj3">
-      <a href="https://github.com/vivianndai/something-old-something-new" target="_blank">
-        <img src="assets/aiart.png">
-        <div class="proj-text">
-          <h5>regenerative art</h5>
-          <p>CS 4701</p>
-          <p> Art created with a genetic algorithm</p>
-          <p>that learns to recreate images with polygons.</p>
-        </div>
-      </a>
+      <h5>regenerative art</h5>
+      <p>CS 4701</p>
+      <p> A genetic algorithm that learns to recreate images</p>
+      <p> using polygons. Implemented in Python.</p>
+      <a href="https://github.com/vivianndai/something-old-something-new" target="_blank" class="proj-button">code</a>
+      <a href="assets/ai_slides.pdf" target="_blank" class="proj-button">slides</a>
+    </div>
+    <div class="proj4">
+      <h5>dirt degredation</h5>
+      <p>World of 8 Billion Contest</p>
+      <p>Received an honorable mention for my animated video essay</p>
+      <p>about the effects of agriculture on Earth's soil. </p>
+      <a href="https://www.worldof8billion.org/video-winner/crop-cultivation-and-dirt-degradation/" target="_blank"
+        class="proj-button">video</a>
+    </div>
+    <div class="proj5">
+      <h5>groundwater remediation</h5>
+      <p>University of Toronto</p>
+      <p>Assisted with the lab research and revision of a paper on </p>
+      <p>gasoline-contaminated groundwater under Prof. Brent Sleep.</p>
+      <a href="https://tspace.library.utoronto.ca/handle/1807/79166" target="_blank" class="proj-button">paper</a>
+    </div>
+    <div class="proj6">
+      <h5>markov horoscopes</h5>
+      <p>Personal project</p>
+      <p>Generates (fake) horoscopes using a Markov chain model </p>
+      <p>and scraped newspaper data. </p>
+      <a href="https://github.com/vivianndai/markov-horoscopes" target="_blank" class="proj-button">code</a>
     </div>
 
-    <div class="proj4">
-      <a href="https://tspace.library.utoronto.ca/handle/1807/79166" target="_blank">
-        <img src="assets/groundwater.png">
-        <div class="proj-text">
-          <h5>groundwater remediation</h5>
-          <p>University of Toronto</p>
-          <p>Research on the remediation of gasoline-contaminated</p>
-          <p>groundwater under Prof. Brent Sleep.</p>
-        </div>
-      </a>
-    </div>
+
   </section>
-</body>
 
 </html>
